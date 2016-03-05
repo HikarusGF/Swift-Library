@@ -32,9 +32,9 @@
    PhotoAsset           ⓐ
    Collection           🅒
    URL                  🅤
-      
-   Example: an array of dictionaries with a string key which value is a tuple of two numbers
-   myVariable＃＃🅣$🅓🅐
+   
+   Example: an array of dictionaries with a string key which value is a tuple of an enum and a number
+   myVariable＃🅔🅣$🅓🅐
    
 */
 
