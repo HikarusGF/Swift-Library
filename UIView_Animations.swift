@@ -53,7 +53,7 @@ class HKUI＋ {
    
 */
 
-// 1-Phase simple Animation
+// 1-PHASE ANIMATION
    class func animation(iterations iterations＃: Int = 0, options: UIViewAnimationOptions = .CurveEaseInOut, delay＃: NSTimeInterval = 0, duration＃: NSTimeInterval, springVelocityⓖ: CGFloat? = nil, springDampingⓖ: CGFloat? = nil, mainƒ: () -> (), completionƒ: (() -> ())? = nil ) {
       if springDampingⓖ != nil && springVelocityⓖ != nil {
          UIView.animateWithDuration(duration＃, delay: delay＃, usingSpringWithDamping: springDampingⓖ!, initialSpringVelocity: springVelocityⓖ!, options: options, animations: {
@@ -73,7 +73,7 @@ class HKUI＋ {
    }
 
    
-// 2-Phase Animation
+// 2-PHASE ANIMATION
    class func animation2𝜙(options options: UIViewAnimationOptions = .CurveEaseInOut, iterations＃: Int = 0, 𝜙1Delay＃: NSTimeInterval = 0, 𝜙1Duration＃: NSTimeInterval, 𝜙1SpringVelocityⓖ: CGFloat? = nil, 𝜙1SpringDampingⓖ: CGFloat? = nil,  𝜙1ƒ: () -> (), 𝜙2Delay＃: NSTimeInterval = 0, var 𝜙2Duration＃: NSTimeInterval? = nil, 𝜙2SpringVelocityⓖ: CGFloat? = nil, 𝜙2SpringDampingⓖ: CGFloat? = nil, 𝜙2ƒ: () -> (), completionƒ: (() -> ())? = nil ) {
       if 𝜙2Duration＃ == nil { 𝜙2Duration＃ = 𝜙1Duration＃  }
       if 𝜙1SpringDampingⓖ != nil && 𝜙1SpringVelocityⓖ != nil {
@@ -119,7 +119,7 @@ class HKUI＋ {
       }
    }
 
-// 2-Phase Animation
+// 3-PHASE ANIMATION
    class func animation3𝜙(options options: UIViewAnimationOptions = .CurveEaseInOut, iterations＃: Int = 0, 𝜙1Delay＃: NSTimeInterval = 0, 𝜙1Duration＃: NSTimeInterval, 𝜙1SpringVelocityⓖ: CGFloat? = nil, 𝜙1SpringDampingⓖ: CGFloat? = nil,  𝜙1ƒ: () -> (), 𝜙2Delay＃: NSTimeInterval = 0, var 𝜙2Duration＃: NSTimeInterval? = nil, 𝜙2SpringVelocityⓖ: CGFloat? = nil, 𝜙2SpringDampingⓖ: CGFloat? = nil, 𝜙2ƒ: () -> (), 𝜙3Delay＃: NSTimeInterval = 0, var 𝜙3Duration＃: NSTimeInterval? = nil, 𝜙3SpringVelocityⓖ: CGFloat? = nil, 𝜙3SpringDampingⓖ: CGFloat? = nil, 𝜙3ƒ: () -> (), completionƒ: (() -> ())? = nil ) {
       if 𝜙2Duration＃ == nil { 𝜙2Duration＃ = 𝜙1Duration＃ }; if 𝜙3Duration＃ == nil { 𝜙3Duration＃ = 𝜙1Duration＃ }
       if 𝜙1SpringVelocityⓖ != nil && 𝜙1SpringDampingⓖ != nil {
