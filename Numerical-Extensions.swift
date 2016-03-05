@@ -24,7 +24,7 @@
    Library Class        ＋     (suffix)
    Additive parameter   ＋     (prefix)
    Complex Structure    ﹙﹚
-   Undetermined         ﹖     for Uudetermined types: Optional or AnyObject
+   Undetermined         ﹖     for Undetermined types: Optional or AnyObject
    Implicitly unwrapped ﹗
    Protocol             Ⓟ
    Function             ƒ
