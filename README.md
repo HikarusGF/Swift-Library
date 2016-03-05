@@ -1,7 +1,8 @@
 # Swift-Library
 ### Abstraction layer/framework with extensions for many classes and types
 
-As I was working on my project "Rendezvous" (a social app for sharing events) I realized that many basic operations require a tedious utilization of a number of Swift, Objective-C, and C API functions that in certain cases did not seem to follow a logical paradigm. I decided to encapsulate those operations in class extensions and custom classes in order to make my main code more synthesized, readable, abstract and efficient. Overall I've built around 150 functions some of which I include in this repository for public contribution. _This is my first repository on GitHub, so for now I'm just posting the code. Although I have 23 programming experience I took a break of 6 years to manage a business and recently came back to this industry specializing in iOS with Swift._
+As I was working on my project "Rendezvous" (a social app for sharing events) I realized that many basic operations require a tedious utilization of a number of Swift, Objective-C, and C API functions that in certain cases did not seem to follow a logical paradigm. I decided to encapsulate those operations in class extensions and custom classes in order to make my main code more synthesized, readable, abstract and efficient. Overall I've built around 150 functions some of which I include in this repository for public contribution.  
+_* This is my first repository on GitHub, so for now I'm just posting the code. Although I have 23 programming experience I took a break of 6 years to manage a business and recently came back to this industry specializing in iOS with Swift._
 
 **EXTENSIONS**  
 - Int: Date-component conversion properties, random...
