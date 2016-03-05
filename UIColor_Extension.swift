@@ -43,7 +43,8 @@ extension UIColor {
    
 // initializes a UIColor instance with a 6-digit hexadecimal code in String
    // very useful when pasting color codes from adobe apps like photoshop or illustrator
-   convenience init(var hexCode6＃$: String) { // creates a color based on a string representing an hexadecimal number in the standard format 0x0000...
+   // (!) uses my array subindex extension: see Array_Extensions.swift
+   convenience init(var hexCode6＃$: String) {
       hexCode6＃$ = hexCode6＃$.uppercaseString
       if let red＃ = hexCode6＃$[0,1]!.intFromHexString＃, green＃ = hexCode6＃$[2,3]!.intFromHexString＃, blue＃ = hexCode6＃$[4,5]!.intFromHexString＃ {
          self.init(red＃: red＃, green＃: green＃, blue＃: blue＃)
