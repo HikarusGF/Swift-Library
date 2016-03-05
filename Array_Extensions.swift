@@ -1,6 +1,9 @@
 /* VARIABLE-TYPE SUFFIX CRITERION
-I've built a custom keyboard layout to include these suffix I find very useful in my code.
-You can of course remove them :)
+
+I've built a custom keyboard layout to include these suffix I find very useful in my code
+Some characters like { ＃ ＋ ﹙﹚ ﹖ } have resemblance to the standard pound, plus, parenthesis, question mark, but are really alternate ASCII characters that can perfectly be used in Swift code
+
+you can of course remove them from the code :)
 
    Boolean              ⓑ
    String               $
