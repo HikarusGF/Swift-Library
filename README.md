@@ -5,7 +5,7 @@ As I was working on my project "Rendezvous" (a social app for sharing events) I 
 
 This is my first repository on GitHub. Although I have 23 programming experience I took a break of 6 years to manage a business and recently came back to this industry specializing in iOS with Swift.
 
-EXTENSIONS
+EXTENSIONS  
   Int: Date-component conversion properties, random...
   Double, Float, CGFloat, CGRect: Currency format & truncation
   String: Many functions we all wish Swift included out of the box
