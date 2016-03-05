@@ -1,9 +1,9 @@
 # Swift-Library
 Abstraction layer/framework with extensions for many classes and types
 
-As I was working on my project "Rendezvous" (a social app for sharing events) I realized that many basic operations require a tedious utilization of a number of Swift, Objective-C, and C API functions that in certain cases did not seem to follow a logical paradigm. I decided to encapsulate those operations in class extensions and custom classes in order to make my main code more synthesized, readable, abstract and efficient. Overall I've built around 150 functions some of which I include in this repository for public contribution.
+As I was working on my project "Rendezvous" (a social app for sharing events) I realized that many basic operations require a tedious utilization of a number of Swift, Objective-C, and C API functions that in certain cases did not seem to follow a logical paradigm. I decided to encapsulate those operations in class extensions and custom classes in order to make my main code more synthesized, readable, abstract and efficient. Overall I've built around 150 functions some of which I include in this repository for public contribution.  
 
-This is my first repository on GitHub. Although I have 23 programming experience I took a break of 6 years to manage a business and recently came back to this industry specializing in iOS with Swift.
+This is my first repository on GitHub. Although I have 23 programming experience I took a break of 6 years to manage a business and recently came back to this industry specializing in iOS with Swift.  
 
 EXTENSIONS  
   Int: Date-component conversion properties, random...
@@ -22,7 +22,7 @@ EXTENSIONS
              track user movement & draw polyline, remove pins
   CLLocationManagerDelegate: activate & deactivate tracking
 
-CUSTOM CLASSES
+CUSTOM CLASSES  
   UIView animations: Very simple function to chain up to 3 animations with all parameters
   Grand Central Dispatch: layer of abstraction with all possible threads and queues in 3 simple functions
   NSDate Operators
@@ -30,11 +30,11 @@ CUSTOM CLASSES
   NSUserDefaults: Read & write with type-specific functions to save the casting
   Location: Encapsulates name, coordinate, and reverse geocoding info (address).
             Instance methods to fech all info, request user authorization
-SUBCLASSES
+SUBCLASSES  
   MKMapView
   UIWebView
 
-OTHER FUNCTIONS & EXPERIMENTS
+OTHER FUNCTIONS & EXPERIMENTS  
   Application Path
   Pointer to any type
   √ and ** operators
