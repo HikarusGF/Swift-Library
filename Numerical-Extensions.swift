@@ -104,7 +104,7 @@ extension CGFloat {
 
 extension CGRect { // shortens A LOT the code for editing CGRects
 /*
-   This function takes parameters to set a CGRect's properties. Ommited parameter wil keep their value
+   This function takes parameters to set a CGRect's properties. Ommited parameter will keep their value
    Boolean "additive parameters" indicate whether the value should replace the current or be added to it
    I've included this function as an extension of UIView as well with the name setFrame()
 */
