@@ -1,5 +1,5 @@
 # Swift-Library
-Abstraction layer/framework with extensions for many classes and types
+## Abstraction layer/framework with extensions for many classes and types
 
 As I was working on my project "Rendezvous" (a social app for sharing events) I realized that many basic operations require a tedious utilization of a number of Swift, Objective-C, and C API functions that in certain cases did not seem to follow a logical paradigm. I decided to encapsulate those operations in class extensions and custom classes in order to make my main code more synthesized, readable, abstract and efficient. Overall I've built around 150 functions some of which I include in this repository for public contribution.  
 
