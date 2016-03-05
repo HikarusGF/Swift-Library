@@ -32,6 +32,10 @@
    PhotoAsset           ⓐ
    Collection           🅒
    URL                  🅤
+   
+   Example: an array of dictionaries with a string key which value is a tuple of an enum and a number
+   myVariable＃🅔🅣$🅓🅐
+   
 */
 
 extension String {
