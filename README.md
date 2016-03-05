@@ -30,6 +30,7 @@ This is my first repository on GitHub. Although I have 23 programming experience
 -NSUserDefaults: Read & write with type-specific functions to save the casting
 -Location: Encapsulates name, coordinate, and reverse geocoding info (address).
             Instance methods to fech all info, request user authorization
+            
 **SUBCLASSES**  
 -MKMapView
 -UIWebView
