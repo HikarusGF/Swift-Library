@@ -1,8 +1,8 @@
 
 /*
-					        Hikarus Guijarro-Fayard - iOS developer specialized in Swift
-					        http://ikiteruningen.net
-					        https://github.com/HikarusGF
+					   Hikarus Guijarro-Fayard - iOS developer specialized in Swift
+					   http://ikiteruningen.net
+					   https://github.com/HikarusGF
 */
 
 extension String {
