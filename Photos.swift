@@ -19,8 +19,8 @@ class HKPhotos＋ { // * a fetch result is an array of AnyObject *
 // ARRAY versions: This structure stores a photo album with with low-resolution thumbnail and without fetched assets to take up less RAM and processor
    typealias PhotoAlbumList🅐Item🅞🅐$🅣 = (title$: String, albumⓐ🅒: PHAssetCollection, thumbNailⓐ: PHAsset)
    typealias PhotoAlbumList🅞🅐$🅣🅐 = [PhotoAlbumList🅐Item🅞🅐$🅣]
-   class func Album🅐SortCriterionⓑ(albumⓐ🅐$🅣: PhotoAlbumList🅐Item🅞🅐$🅣, albumB🅞🅐$🅣: PhotoAlbumList🅐Item🅞🅐$🅣) -> Bool {
-      if HKPhotos＋.CameraRollLocalizedTitles$🅐.contains(albumⓐ🅐$🅣.title$) { return true } else if HKPhotos＋.CameraRollLocalizedTitles$🅐.contains(albumB🅞🅐$🅣.title$) { return false } else { return albumⓐ🅐$🅣.title$ < albumB🅞🅐$🅣.title$ }
+   class func Album🅐SortCriterionⓑ(album1🅐$🅣: PhotoAlbumList🅐Item🅞🅐$🅣, album2🅞🅐$🅣: PhotoAlbumList🅐Item🅞🅐$🅣) -> Bool {
+      if HKPhotos＋.CameraRollLocalizedTitles$🅐.contains(album1🅐$🅣.title$) { return true } else if HKPhotos＋.CameraRollLocalizedTitles$🅐.contains(album2🅞🅐$🅣.title$) { return false } else { return album1🅐$🅣.title$ < album2🅞🅐$🅣.title$ }
    }
 // DICTIONARY versions
    typealias PhotoAlbumList🅓Item🅞🅐$🅣 = (albumⓐ🅒: PHAssetCollection, thumbNailⓐ: PHAsset)
