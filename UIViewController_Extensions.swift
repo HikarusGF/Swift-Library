@@ -1,44 +1,7 @@
-/* VARIABLE-TYPE SUFFIX CRITERION
-
-I've built a custom keyboard layout to include these suffix I find very useful in my code
-Some characters like { ＃ ＋ ﹙﹚ ﹖ } have resemblance to the standard pound, plus, parenthesis, question mark, but are really alternate ASCII characters that can perfectly be used in Swift code
-
-you can of course remove them from the code :)
-
-   Boolean              ⓑ
-   String               $
-   number               ＃
-   Int                  ＃i
-   Float                ＃f
-   Double               ＃d
-   CGFloat              ⓖ
-   CGPoint              ⓖ²    2 dimensional CGFloats
-   CGRect               ⓖ⁴    4 dimensional CGFloats
-   Binary/Data          ß     For NSData, and images or videos in CoreData
-   Core Image           ⓘ
-   NSDate               ㊐
-   Object               🅞
-   Tuple                🅣
-   Array                🅐
-   Set                  ...     ? not sure about this one...
-   Dictionary           🅓
-   Enumeration          🅔
-   Structure            🅢
-   Library Class        ＋     (suffix)
-   Additive parameter   ＋     (prefix)
-   Complex Structure    ﹙﹚
-   Undetermined         ﹖     for Undetermined types: Optional or AnyObject
-   Implicitly unwrapped ﹗
-   Protocol             Ⓟ
-   Function             ƒ
-   Pointer              ⓟ⃗
-   PhotoAsset           ⓐ
-   Collection           🅒
-   URL                  🅤
-   
-   Example: an array of dictionaries with a string key which value is a tuple of an enum and a number
-   myVariable＃🅔🅣$🅓🅐
-   
+/*
+					Hikarus Guijarro-Fayard - iOS developer specialized in Swift
+					http://ikiteruningen.net
+					https://github.com/HikarusGF
 */
 
 extension UIViewController {
@@ -94,5 +57,47 @@ extension UIViewController {
       if button3Text$.isNotNilⓑ() && button3Style🅔.isNotNilⓑ() { alertController🅞.addAction(UIAlertAction(title: button3Text$!, style: button3Style🅔!, handler: button3Handlerƒ)) }
       self.presentViewController(alertController🅞, animated: YES, completion: completionƒ)
    }
-   
 }
+
+/* VARIABLE-TYPE SUFFIX CRITERION
+
+I've built a custom keyboard layout to include these suffix I find very useful in my code
+Some characters like { ＃ ＋ ﹙﹚ ﹖ } have resemblance to the standard pound, plus, parenthesis, question mark, but are really alternate ASCII characters that can perfectly be used in Swift code
+
+you can of course remove them from the code :)
+
+   Boolean              ⓑ
+   String               $
+   number               ＃
+   Int                  ＃i
+   Float                ＃f
+   Double               ＃d
+   CGFloat              ⓖ
+   CGPoint              ⓖ²    2 dimensional CGFloats
+   CGRect               ⓖ⁴    4 dimensional CGFloats
+   Binary/Data          ß     For NSData, and images or videos in CoreData
+   Core Image           ⓘ
+   NSDate               ㊐
+   Object               🅞
+   Tuple                🅣
+   Array                🅐
+   Set                  ...     ? not sure about this one...
+   Dictionary           🅓
+   Enumeration          🅔
+   Structure            🅢
+   Library Class        ＋     (suffix)
+   Additive parameter   ＋     (prefix)
+   Complex Structure    ﹙﹚
+   Undetermined         ﹖     for Undetermined types: Optional or AnyObject
+   Implicitly unwrapped ﹗
+   Protocol             Ⓟ
+   Function             ƒ
+   Pointer              ⓟ⃗
+   PhotoAsset           ⓐ
+   Collection           🅒
+   URL                  🅤
+   
+   Example: an array of dictionaries with a string key which value is a tuple of an enum and a number
+   myVariable＃🅔🅣$🅓🅐
+   
+*/
