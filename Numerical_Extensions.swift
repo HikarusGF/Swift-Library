@@ -29,6 +29,11 @@ extension Int {
    
 // alghough and integer has no decimals it's sometimes convenient to format them with .00 in currency contexts
    var formattedWith2Digits$: String { get { return String(format: "%02d", self) } }
+   
+   func isMultipleOfⓑ(number＃: Int) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Float) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return self % number＃ == 0 }
 }
 
 extension Double {
@@ -44,6 +49,10 @@ extension Double {
       twoDecimalsFormatter.minimumFractionDigits = numberOfDecimals＃ ; twoDecimalsFormatter.maximumFractionDigits = numberOfDecimals＃
       return twoDecimalsFormatter.stringFromNumber(self)!
    }
+   func isMultipleOfⓑ(number＃: Int) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Float) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return self % number＃ == 0 }
 }
 
 extension Float {
@@ -59,7 +68,10 @@ extension Float {
       twoDecimalsFormatter.minimumFractionDigits = numberOfDecimals＃ ; twoDecimalsFormatter.maximumFractionDigits = numberOfDecimals＃
       return twoDecimalsFormatter.stringFromNumber(self)!
    }
-   
+   func isMultipleOfⓑ(number＃: Int) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Float) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return self % number＃ == 0 }
 }
 
 extension CGFloat {
@@ -76,6 +88,10 @@ extension CGFloat {
       twoDecimalsFormatter.minimumFractionDigits = numberOfDecimals＃ ; twoDecimalsFormatter.maximumFractionDigits = numberOfDecimals＃
       return twoDecimalsFormatter.stringFromNumber(self)!
    }
+   func isMultipleOfⓑ(number＃: Int) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Float) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return self % number＃ == 0 }
 }
 
 
