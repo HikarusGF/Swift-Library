@@ -20,7 +20,6 @@ class HKUI＋ {
       }, completionƒ: {
          // code after animation is completed
    })
-   
 */
 
 // 1-PHASE ANIMATION
