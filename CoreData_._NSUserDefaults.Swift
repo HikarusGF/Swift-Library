@@ -107,10 +107,11 @@ extension NSManagedObject { // attribute-access functions with implicit data-typ
    
 }
 
-/* VARIABLE-TYPE SUFFIX CRITERION ----------------------------------------------------------------------------------------------------------------------------------------------------------
-
+/* VARIABLE-TYPE SUFFIX CRITERION ---------------------------------------------------------------------------------
+ 
 I've built a custom keyboard layout to include these suffix I find very useful in my code
-Some characters like { ＃ ＋ ﹙﹚ ﹖ } have resemblance to the standard pound, plus, parenthesis, question mark, but are really alternate ASCII characters that can perfectly be used in Swift code
+Some characters like { ＃ ＋ ﹙﹚ ﹖ } have resemblance to the standard pound, plus, parenthesis, question mark,
+   but are really alternate ASCII characters that can perfectly be used in Swift code
 
 you can of course remove them from the code :)
 
@@ -148,4 +149,4 @@ you can of course remove them from the code :)
    Example: an array of dictionaries with a string key which value is a tuple of an enum and a number
    myVariable＃🅔🅣$🅓🅐
    
-*/
+----------------------------------------------------------------------------------------------------------------- */
