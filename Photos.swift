@@ -13,7 +13,7 @@
 class HKPhotos＋ { // * a fetch result is an array of AnyObject *
 
 // not sure about the future of these two properties. There is API to get localized titles. I'll eventually get to it
-   static let CameraRollLocalizedTitles$🅐 = ["Camera Roll", "カメラロール"] // to be eliminated in the future?
+   static let CameraRollLocalizedTitles$🅐 = ["Camera Roll", "カメラロール"]
    static let VideoAlbumLocalizedTitles$🅐 = ["Videos", "ビデオ"]
 
 // ARRAY versions: This structure stores a photo album with with low-resolution thumbnail and without fetched assets to take up less RAM and processor
