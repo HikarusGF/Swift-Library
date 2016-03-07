@@ -34,7 +34,7 @@ class HKPhotos＋ { // * a fetch result is an array of AnyObject *
       func fetchPicturesⓐ🅐() {
          imagesⓐ🅐.removeAll()
          let fetchOptions🅞 = PHFetchOptions()
-         fetchOptions🅞.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+         fetchOptions🅞.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: NO)]
          let pictures﹖🅐  = PHAsset.fetchAssetsInAssetCollection(albumⓐ🅒, options: fetchOptions🅞)
          if pictures﹖🅐.isNotEmptyⓑ { pictures﹖🅐.enumerateObjectsUsingBlock({ (image﹖, index, pointer) -> Void in self.imagesⓐ🅐.append(image﹖ as! PHAsset) }) }
       }
@@ -43,12 +43,12 @@ class HKPhotos＋ { // * a fetch result is an array of AnyObject *
 // ARRAY version: fetches the list of photo albums in the device
    class func FetchAlbumList🅞🅐(thumbnailSizeⓖ² thumbnailSizeⓖ²: CGSize? = nil) -> PhotoAlbumList🅞🅐$🅣🅐 { // if thumbnailSizeⓖ² is ommited the thumbnails are not fetched
       var albumList🅐 = PhotoAlbumList🅞🅐$🅣🅐()
-      for albumType🅔 in [PHAssetCollectionType.SmartAlbum, .Album/*, .Moment*/] { // still have to do some research with the .Moment
+      for albumType🅔 in [PHAssetCollectionType.SmartAlbum, .Album/*, .Moment*/] {
          let albums🅐: PHFetchResult = PHAssetCollection.fetchAssetCollectionsWithType(albumType🅔, subtype: .Any, options: nil) // get list of albums
          albums🅐.enumerateObjectsUsingBlock { (album﹖, index＃, pointerⓟ⃗) -> Void in // iterate in each album
             let albumⓐ🅒 = album﹖ as! PHAssetCollection
             let fetchOptions🅞 = PHFetchOptions()
-            fetchOptions🅞.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+            fetchOptions🅞.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: NO)]
             fetchOptions🅞.predicate = NSPredicate(format: "mediaType = \(PHAssetMediaType.Image.rawValue)")
             let pictures﹖🅐  = PHAsset.fetchAssetsInAssetCollection(albumⓐ🅒, options: fetchOptions🅞) // get list of pictures in album (not the images inside the 'assets')
             if !VideoAlbumLocalizedTitles$🅐.contains(albumⓐ🅒.localizedTitle!) && pictures﹖🅐.isNotEmptyⓑ { // empty albums are not listed
@@ -72,9 +72,9 @@ class HKPhotos＋ { // * a fetch result is an array of AnyObject *
          albums🅐.enumerateObjectsUsingBlock { (album﹖, index＃, pointerⓟ⃗) -> Void in
             let albumⓐ🅒 = album﹖ as! PHAssetCollection
             let fetchOptions🅞 = PHFetchOptions()
-            fetchOptions🅞.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+            fetchOptions🅞.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: NO)]
             let pictures﹖🅐  = PHAsset.fetchAssetsInAssetCollection(albumⓐ🅒, options: fetchOptions🅞)
-            if !VideoAlbumLocalizedTitles$🅐.contains(albumⓐ🅒.localizedTitle!) && picturesAO🅐.isNotEmptyⓑ { albumList🅓[albumⓐ🅒.localizedTitle!] = (albumⓐ🅒, pictures﹖🅐.firstObject as! PHAsset) }
+            if !VideoAlbumLocalizedTitles$🅐.contains(albumⓐ🅒.localizedTitle!) && pictures﹖🅐.isNotEmptyⓑ { albumList🅓[albumⓐ🅒.localizedTitle!] = (albumⓐ🅒, pictures﹖🅐.firstObject as! PHAsset) }
          }
       }
       return albumList🅓
