@@ -85,6 +85,9 @@ class HKPhotos＋ { // * a fetch result is an array of AnyObject *
    class func UnregisterPhotoLibraryObserver(observer🅞 observer🅞: PHPhotoLibraryChangeObserver) { PHPhotoLibrary.sharedPhotoLibrary().unregisterChangeObserver(observer🅞) }
    
 }
+
+// COLLECTIONVIEW (can be tableView) DELEGATE FUNCIONS -----------------------------------------------------------------------------------
+
 /*
   requestImageForAsset() should be called from cellForItemAtIndexPath() because it's an asynchronous process that assigns the results of the fetch to a memory address it will be called in as many passes as necessary for the image to be loaded in full definition for the requested size
   in my tests where I invoked it indirectly from a library funcion I experienced a slight but noticeable delay and some pictures were blur for a fraction of a second until they finished loading
