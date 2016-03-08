@@ -272,8 +272,9 @@ extension MKMapView {
    */
 }
 
-// (*2) This mapView delegate funtion handles the longPress on the mapView
-// In this case it tells the mapView to add a pin at the translated coordinates
+// MAPVIEW DELEGATE FUNCIONS --------------------------------------------------------------------------------------
+
+// (*2) This mapView delegate funtion handles the longPress on the mapView. In this case it tells the mapView to add a pin at the translated coordinates
    @IBAction func mapViewLongPress(sender: UILongPressGestureRecognizer) { // create new pin
       let coordinate＃² = myMapView﹫.convertPoint(sender.locationInView(myMapView﹫), toCoordinateFromView: myMapView﹫)
       myMapView﹫.addPin(coordinate＃²: coordinate＃², title$: "Pin Title", selectedⓑ: true, uniqueⓑ: true) { /* trailing closure completionHandler code */ }
