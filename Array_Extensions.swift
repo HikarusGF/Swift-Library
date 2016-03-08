@@ -90,8 +90,8 @@ you can of course remove them from the code :)
    PhotoAsset           ⓐ
    Collection           🅒
    URL                  🅤
-   IBOutlets			      ﹫
-   
+   IBOutlets            ﹫���
+
    Example: an array of dictionaries with a string key which value is a tuple of an enum and a number
    myVariable＃🅔🅣$🅓🅐
    
