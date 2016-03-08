@@ -31,28 +31,9 @@ extension Int {
    var formattedWith2Digits$: String { get { return String(format: "%02d", self) } }
    
    func isMultipleOfⓑ(number＃: Int) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Float) -> Bool { return Float(self) % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return CGFloat(self) % number＃ == 0 }
    func isMultipleOfⓑ(number＃: Double) -> Bool { return Double(self) % number＃ == 0 }
-   func isMultipleOfⓑ(number＃: Float) -> Bool { return Float(self) % number＃ == 0 }
-   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return CGFloat(self) % number＃ == 0 }
-}
-
-extension Double {
-   var formattedWith2Decimals$: String {
-      let twoDecimalsFormatter = NSNumberFormatter()
-      twoDecimalsFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-      twoDecimalsFormatter.minimumFractionDigits = 2 ; twoDecimalsFormatter.maximumFractionDigits = 2
-      return twoDecimalsFormatter.stringFromNumber(self)!
-   }
-   func truncate$(numberOfDecimals＃ numberOfDecimals＃: Int) -> String {
-      let twoDecimalsFormatter = NSNumberFormatter()
-      twoDecimalsFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
-      twoDecimalsFormatter.minimumFractionDigits = numberOfDecimals＃ ; twoDecimalsFormatter.maximumFractionDigits = numberOfDecimals＃
-      return twoDecimalsFormatter.stringFromNumber(self)!
-   }
-   func isMultipleOfⓑ(number＃: Int) -> Bool { return self % Double(number＃) == 0 }
-   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % number＃ == 0 }
-   func isMultipleOfⓑ(number＃: Float) -> Bool { return Float(self) % number＃ == 0 }
-   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return CGFloat(self) % number＃ == 0 }
 }
 
 extension Float {
@@ -69,9 +50,9 @@ extension Float {
       return twoDecimalsFormatter.stringFromNumber(self)!
    }
    func isMultipleOfⓑ(number＃: Int) -> Bool { return self % Float(number＃) == 0 }
-   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % Float(number＃) == 0 }
    func isMultipleOfⓑ(number＃: Float) -> Bool { return self % number＃ == 0 }
    func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return CGFloat(self) % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return Double(self) % number＃ == 0 }
 }
 
 extension CGFloat {
@@ -89,11 +70,29 @@ extension CGFloat {
       return twoDecimalsFormatter.stringFromNumber(self)!
    }
    func isMultipleOfⓑ(number＃: Int) -> Bool { return self % CGFloat(number＃) == 0 }
-   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % CGFloat(number＃) == 0 }
    func isMultipleOfⓑ(number＃: Float) -> Bool { return self % CGFloat(number＃) == 0 }
    func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return self % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return Double(self) % number＃ == 0 }
 }
 
+extension Double {
+   var formattedWith2Decimals$: String {
+      let twoDecimalsFormatter = NSNumberFormatter()
+      twoDecimalsFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+      twoDecimalsFormatter.minimumFractionDigits = 2 ; twoDecimalsFormatter.maximumFractionDigits = 2
+      return twoDecimalsFormatter.stringFromNumber(self)!
+   }
+   func truncate$(numberOfDecimals＃ numberOfDecimals＃: Int) -> String {
+      let twoDecimalsFormatter = NSNumberFormatter()
+      twoDecimalsFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+      twoDecimalsFormatter.minimumFractionDigits = numberOfDecimals＃ ; twoDecimalsFormatter.maximumFractionDigits = numberOfDecimals＃
+      return twoDecimalsFormatter.stringFromNumber(self)!
+   }
+   func isMultipleOfⓑ(number＃: Int) -> Bool { return self % Double(number＃) == 0 }
+   func isMultipleOfⓑ(number＃: Float) -> Bool { return self % Double(number＃) == 0 }
+   func isMultipleOfⓑ(number＃: CGFloat) -> Bool { return CGFloat(self) % number＃ == 0 }
+   func isMultipleOfⓑ(number＃: Double) -> Bool { return self % number＃ == 0 }
+}
 
 extension CGRect { // shortens A LOT the code for editing CGRects
 /*
