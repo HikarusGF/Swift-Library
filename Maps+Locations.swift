@@ -190,7 +190,7 @@ extension MKMapView {
       self.setCamera(MKMapCamera(lookingAtCenterCoordinate: centercoordinate＃², fromDistance: cameraAltitude＃, pitch: 0, heading: currentHeading＃), animated: true)
    }
 
-// zooms and centers on the pin is selected by the user
+// zooms and centers on the pin selected by the user
    func centerSelectedPin() {
       self.setCamera(MKMapCamera(lookingAtCenterCoordinate: self.selectedAnnotations.last!.coordinate, fromDistance: self.camera.altitude, pitch: 0, heading: self.camera.heading), animated: true)
    }
