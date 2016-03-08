@@ -99,18 +99,6 @@ class HKPhotos＋ { // * a fetch result is an array of AnyObject *
       return cell
    }
 
-/*
-                             .-----------------------------------------------------------------------------.
-                            /  .-.                                                                      .-.  \
-                           |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-                           | |\_.  |                     http://ikiteruningen.net                     |    /| |
-                           |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-                           | `---' |                                                                  | `---' |
-                           \       |------------------------------------------------------------------|       /
-                            \     /                                                                    \     /
-                             `---'                                                                      `---'
-*/
-
 
 /* VARIABLE-TYPE SUFFIX CRITERION ---------------------------------------------------------------------------------
  
