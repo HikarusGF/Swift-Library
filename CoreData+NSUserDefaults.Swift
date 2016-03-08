@@ -107,10 +107,23 @@ extension NSManagedObject { // attribute-access functions with implicit data-typ
    
 }
 
+/*
+                             .-----------------------------------------------------------------------------.
+                            /  .-.                                                                      .-.  \
+                           |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
+                           | |\_.  |                     http://ikiteruningen.net                     |    /| |
+                           |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
+                           | `---' |                                                                  | `---' |
+                           \       |------------------------------------------------------------------|       /
+                            \     /                                                                    \     /
+                             `---'                                                                      `---'
+*/
+
+
 /* VARIABLE-TYPE SUFFIX CRITERION ---------------------------------------------------------------------------------
  
 I've built a custom keyboard layout to include these suffix I find very useful in my code
-Some characters like { ＃ ＋ ﹙﹚ ﹖ } have resemblance to the standard pound, plus, parenthesis, question mark,
+Some characters like { ＃ ＋ ﹙﹚ ﹖ ﹫} have resemblance to the standard pound, plus, parenthesis, question mark, At-Sign...
    but are really alternate ASCII characters that can perfectly be used in Swift code
 
 you can of course remove them from the code :)
