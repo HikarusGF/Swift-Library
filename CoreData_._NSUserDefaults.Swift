@@ -3,7 +3,7 @@
                             /  .-.                                                                      .-.  \
                            |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
                            | |\_.  |                     http://ikiteruningen.net                     |    /| |
-                           |\|  | /|                    https://github.com/HikarusG                   |\  | |/|
+                           |\|  | /|                   https://github.com/HikarusGF                   |\  | |/|
                            | `---' |                                                                  | `---' |
                            \       |------------------------------------------------------------------|       /
                             \     /                                                                    \     /
