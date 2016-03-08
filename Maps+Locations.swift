@@ -156,7 +156,7 @@ extension CLLocationManagerDelegate {
    func stopTrackingLocation() { HKMaps＋.DeactivateLocationTracking() }
 }
 
-
+// MAPVIEW EXTENSIONS -------------------------------------------------------------------------------------------------------------
 
 extension MKMapView {
    
