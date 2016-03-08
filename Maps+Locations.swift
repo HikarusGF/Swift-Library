@@ -73,7 +73,7 @@ class HKMaps＋ { // this class encapsulates miscelaneous location functionaliti
       LocationManager🅞.startUpdatingLocation()
       /*
          authorization requests only prompts user when authorization status is kCLAuthorizationStatusNotDetermined
-         to react to authorzation changes the CLLocation manager delegate must implement: locationManagerdidChangeAuthorizationStatus()
+         to react to authorization changes the CLLocation manager delegate must implement locationManagerDidChangeAuthorizationStatus()
       */
    }
    
