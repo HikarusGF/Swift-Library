@@ -79,7 +79,7 @@ class HKMaps＋ { // this class encapsulates miscelaneous location functionaliti
    
    class func DeactivateLocationTracking() { LocationManager🅞.stopUpdatingLocation() }
    
-// this is the function that performs the reverseGeocodeLocation, called from the class location further down
+// this is the function that performs the reverseGeocodeLocation, called from the class location further down ( see *1 )
    class func FetchLocationAddress(location🅞 location🅞: Location🅞, completionƒ: (() -> ())? = nil) {
       CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: location🅞.coordinate＃².latitude, longitude: location🅞.coordinate＃².longitude), completionHandler: { (placemarks🅞, error) in
          if error.isNilⓑ() {
@@ -110,7 +110,6 @@ class HKMaps＋ { // this class encapsulates miscelaneous location functionaliti
    This class encapsulates everything a location needs.
    the method fetchAddress() uses reverseGeocodeLocation indirectly via HKMaps＋.FetchLocationAddress() to fetch the location's address info and store it in its internal properties
 */
-
 class Location🅞: CustomDebugStringConvertible {
    var name$: String?
    var coordinate＃²: CLLocationCoordinate2D
@@ -195,7 +194,7 @@ extension MKMapView {
       self.setCamera(MKMapCamera(lookingAtCenterCoordinate: self.selectedAnnotations.last!.coordinate, fromDistance: self.camera.altitude, pitch: 0, heading: self.camera.heading), animated: true)
    }
    
-// launches a search with the specified address, keywords, or natural language, and adds the results as pins in the map replacing previous pins
+// (*1) launches a search with the specified address, keywords, or natural language, and adds the results as pins in the map replacing previous pins
    func findPOI(query$ query$: String) {
       self.removePins()
       let searchRequest🅞 = MKLocalSearchRequest()
@@ -213,7 +212,7 @@ extension MKMapView {
       }
    }
    
-// used to add a pin when user LONG-PRESSES on a pint of the map. ( *1 see example further down )
+// used to add a pin when user LONG-PRESSES on a pint of the map ( see example *2 further down )
    func addPin(coordinate＃² coordinate＃²: CLLocationCoordinate2D, title$: String = "Unnamed Location", selectedⓑ: Bool = false, uniqueⓑ: Bool = false, completionƒ: (() -> ())? = nil ) {
       if uniqueⓑ { self.removePins() }
       let annotation🅞 = MKPointAnnotation()
@@ -226,7 +225,7 @@ extension MKMapView {
    }
    
 /*
-    this is called by the mapView delegate function viewForAnnotation() to set the pin's title and custom image ( *2 see example further down )
+    this is called by the mapView delegate function viewForAnnotation() to set the pin's title and custom image ( see example *3 further down )
     I didn't need to add a picture inside the callout but it can also be configured
     You can see this in action in my app demo at http://ikiteruningen.net/demo/ in the Maps video
 */
@@ -273,14 +272,14 @@ extension MKMapView {
    */
 }
 
-// (*1) This mapView delegate funtion handles the longPress on the mapView
+// (*2) This mapView delegate funtion handles the longPress on the mapView
 // In this case it tells the mapView to add a pin at the translated coordinates
    @IBAction func mapViewLongPress(sender: UILongPressGestureRecognizer) { // create new pin
       let coordinate＃² = myMapView﹫.convertPoint(sender.locationInView(myMapView﹫), toCoordinateFromView: myMapView﹫)
       myMapView﹫.addPin(coordinate＃²: coordinate＃², title$: "Pin Title", selectedⓑ: true, uniqueⓑ: true) { /* trailing closure completionHandler code */ }
 }
 
-// (*2) This mapView delegate funtion request for the appearance of the pins in the map. See reference for MKAnnotationView
+// (*3) This mapView delegate funtion request for the appearance of the pins in the map. See reference for MKAnnotationView
    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
       if annotation is MKUserLocation { return nil } // funny, I don't quite remember why I added this... I'll have to do some tests
       return mapView.customizePin(annotation🅞: annotation, image$: mapPinFlagBlue$)
