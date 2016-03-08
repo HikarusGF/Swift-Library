@@ -160,7 +160,7 @@ extension CLLocationManagerDelegate {
 
 extension MKMapView {
    
-// remove all pins in the map
+// removes all pins in the map
    func removePins() { for annotation🅞 in self.annotations { self.removeAnnotation(annotation🅞) } }
    
 // scales and centers around all pins already existing in the map withough changing map rotation set by user
@@ -212,7 +212,7 @@ extension MKMapView {
       }
    }
    
-// used to add a pin when user LONG-PRESSES on a pint of the map ( see example *2 further down )
+// adds a pin when user LONG-PRESSES the map ( see example *2 further down )
    func addPin(coordinate＃² coordinate＃²: CLLocationCoordinate2D, title$: String = "Unnamed Location", selectedⓑ: Bool = false, uniqueⓑ: Bool = false, completionƒ: (() -> ())? = nil ) {
       if uniqueⓑ { self.removePins() }
       let annotation🅞 = MKPointAnnotation()
