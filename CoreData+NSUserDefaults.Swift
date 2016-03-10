@@ -107,19 +107,6 @@ extension NSManagedObject { // attribute-access functions with implicit data-typ
    
 }
 
-/*
-                             .-----------------------------------------------------------------------------.
-                            /  .-.                                                                      .-.  \
-                           |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-                           | |\_.  |                     http://ikiteruningen.net                     |    /| |
-                           |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-                           | `---' |                                                                  | `---' |
-                           \       |------------------------------------------------------------------|       /
-                            \     /                                                                    \     /
-                             `---'                                                                      `---'
-*/
-
-
 /* VARIABLE-TYPE SUFFIX CRITERION ---------------------------------------------------------------------------------
  
 I've built a custom keyboard layout to include these suffix I find very useful in my code
