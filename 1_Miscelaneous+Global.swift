@@ -1,13 +1,13 @@
 /*
-.-----------------------------------------------------------------------------.
-/  .-.                                                                      .-.  \
-|  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-| |\_.  |                     http://ikiteruningen.net                     |    /| |
-|\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-| `---' |                                                                  | `---' |
-\       |------------------------------------------------------------------|       /
-\     /                                                                    \     /
-`---'                                                                      `---'
+                             .-----------------------------------------------------------------------------.
+                           /  .-.                                                                      .-.  \
+                          |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
+                          | |\_.  |                     http://ikiteruningen.net                     |    /| |
+                          |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
+                          | `---' |                                                                  | `---' |
+                          \       |------------------------------------------------------------------|       /
+                           \     /                                                                    \     /
+                            `---'                                                                      `---'
 */
 
 // I use these for clarity and linguistical consitency in some of my functions although I've removed them from the sample codes in GitHub
