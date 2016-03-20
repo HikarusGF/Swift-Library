@@ -1,32 +1,34 @@
 /*
-.-----------------------------------------------------------------------------.
-/  .-.                                                                      .-.  \
-|  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-| |\_.  |                     http://ikiteruningen.net                     |    /| |
-|\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-| `---' |                                                                  | `---' |
-\       |------------------------------------------------------------------|       /
-\     /                                                                    \     /
-`---'                                                                      `---'
+                             .-----------------------------------------------------------------------------.
+                           /  .-.                                                                      .-.  \
+                          |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
+                          | |\_.  |                     http://ikiteruningen.net                     |    /| |
+                          |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
+                          | `---' |                                                                  | `---' |
+                          \       |------------------------------------------------------------------|       /
+                           \     /                                                                    \     /
+                            `---'                                                                      `---'
 */
+
 
 class HKUI＋ {
    
-   /*
+/*
    These functions perform animations in 1, 2, and 3 phases respectively. They are very useful to compose complex animations chaining one after the other
    Because most parameters in the header for all animation phases have default values the calls can be very short
    To get an idea of how compact a complex animation can become using these functions here's the exoskeleton that the triple animation produces:
    
    HKUI＋.animation3𝜙(𝜙1Duration＃: sectionTransitionDuration＃, 𝜙1ƒ: {
-   // 1st phase code
+      // 1st phase code
    }, 𝜙2ƒ: {
-   // 2nd phase code
+      // 2nd phase code
    }, 𝜙3ƒ: {
-   // 3rd phase code
+      // 3rd phase code
    }, completionƒ: {
-   // code after animation is completed
+      // code after animation is completed
    })
-   */
+   
+*/
    
    // 1-PHASE ANIMATION
    class func animation(iterations iterations＃: Int = 0, options: UIViewAnimationOptions = .CurveEaseInOut, delay＃: NSTimeInterval = 0, duration＃: NSTimeInterval, springVelocityⓖ: CGFloat? = nil, springDampingⓖ: CGFloat? = nil, mainƒ: () -> (), completionƒ: (() -> ())? = nil ) {
