@@ -53,8 +53,8 @@ class HKThreading＋ {
    class func LAUNCH_THREAD_NEW_Q(dispatchMode🅔 dispatchMode🅔: ThreadDispatchModes🅔 = .Asynchronous, queueType🅔: QueueTypes🅔, queueName$: String, delayInSeconds＃: NSTimeInterval? = nil, bodyƒ: () -> (), completionƒ: (() -> ())? = nil) {
       var queue: dispatch_queue_t
       switch queueType🅔 {
-      case .Concurrent: queue = dispatch_queue_create(queueName$, DISPATCH_QUEUE_CONCURRENT)
-      case .Serial:  queue = dispatch_queue_create(queueName$, DISPATCH_QUEUE_SERIAL)
+         case .Concurrent: queue = dispatch_queue_create(queueName$, DISPATCH_QUEUE_CONCURRENT)
+         case .Serial:  queue = dispatch_queue_create(queueName$, DISPATCH_QUEUE_SERIAL)
       }
       if delayInSeconds＃.isNilⓑ(){ if dispatchMode🅔 == .Synchronous { dispatch_sync(queue) { bodyƒ(); completionƒ } } else { dispatch_async(queue) { bodyƒ(); completionƒ } }
       } else { dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds＃!*Double(NSEC_PER_SEC))), queue) { bodyƒ(); completionƒ?() } }
@@ -64,10 +64,10 @@ class HKThreading＋ {
    class func LAUNCH_THREAD_GLOBAL_Q(dispatchMode🅔 dispatchMode🅔: ThreadDispatchModes🅔 = .Asynchronous, priority🅔: QueuePriorities🅔? = .Default, qualityOfService🅔: QueueQOS🅔? = nil, delayInSeconds＃: NSTimeInterval? = nil, bodyƒ: () -> (), completionƒ: (() -> ())? = nil ) {
       var queue: dispatch_queue_t
       switch priority🅔! {
-      case .Default: if qualityOfService🅔 == nil { queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0) } else { queue = dispatch_get_global_queue(Int(qualityOfService🅔!.rawValue), 0) }
-      case .Background: queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
-      case .Low: queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)
-      case .High: queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
+         case .Default: if qualityOfService🅔 == nil { queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0) } else { queue = dispatch_get_global_queue(Int(qualityOfService🅔!.rawValue), 0) }
+         case .Background: queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
+         case .Low: queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)
+         case .High: queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
       }
       if delayInSeconds＃.isNilⓑ() { if dispatchMode🅔 == .Synchronous { dispatch_sync(queue) { bodyƒ(); completionƒ?() } } else { dispatch_async(queue) { bodyƒ(); completionƒ?() } }
       } else { dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delayInSeconds＃!*Double(NSEC_PER_SEC))), queue) { bodyƒ(); completionƒ?() } }
