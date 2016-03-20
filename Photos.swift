@@ -1,14 +1,15 @@
 /*
-.-----------------------------------------------------------------------------.
-/  .-.                                                                      .-.  \
-|  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-| |\_.  |                     http://ikiteruningen.net                     |    /| |
-|\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-| `---' |                                                                  | `---' |
-\       |------------------------------------------------------------------|       /
-\     /                                                                    \     /
-`---'                                                                      `---'
+                             .-----------------------------------------------------------------------------.
+                           /  .-.                                                                      .-.  \
+                          |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
+                          | |\_.  |                     http://ikiteruningen.net                     |    /| |
+                          |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
+                          | `---' |                                                                  | `---' |
+                          \       |------------------------------------------------------------------|       /
+                           \     /                                                                    \     /
+                            `---'                                                                      `---'
 */
+
 
 class HKPhotos＋ { // * a fetch result is an array of AnyObject *
    
