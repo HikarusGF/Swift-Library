@@ -34,23 +34,23 @@ extension UIColor {
          let number＃ = Int.random＃(0, max＃: 15)
          var character = String()
          switch number＃ {
-         case 0: character = "0"
-         case 1: character = "1"
-         case 2: character = "2"
-         case 3: character = "3"
-         case 4: character = "4"
-         case 5: character = "5"
-         case 6: character = "6"
-         case 7: character = "7"
-         case 8: character = "8"
-         case 9: character = "9"
-         case 10: character = "a"
-         case 11: character = "b"
-         case 12: character = "c"
-         case 13: character = "d"
-         case 14: character = "e"
-         case 15: character = "f"
-         default: break
+            case 0: character = "0"
+            case 1: character = "1"
+            case 2: character = "2"
+            case 3: character = "3"
+            case 4: character = "4"
+            case 5: character = "5"
+            case 6: character = "6"
+            case 7: character = "7"
+            case 8: character = "8"
+            case 9: character = "9"
+            case 10: character = "a"
+            case 11: character = "b"
+            case 12: character = "c"
+            case 13: character = "d"
+            case 14: character = "e"
+            case 15: character = "f"
+            default: break
          }
          colorCode$ += character
       }
@@ -60,18 +60,18 @@ extension UIColor {
    // creates a random basic color. Useful for games
    class var randomBasicColor🅞: UIColor {
       switch arc4random()%11 {
-      case 0: return UIColor.greenColor()
-      case 1: return UIColor.blueColor()
-      case 2: return UIColor.orangeColor()
-      case 3: return UIColor.redColor()
-      case 4: return UIColor.yellowColor()
-      case 5: return UIColor.purpleColor()
-      case 6: return UIColor.cyanColor()
-      case 7: return UIColor.brownColor()
-      case 8: return UIColor.magentaColor()
-      case 9: return UIColor.grayColor()
-      case 10: return UIColor.lightGrayColor()
-      default: return UIColor.darkGrayColor()
+         case 0: return UIColor.greenColor()
+         case 1: return UIColor.blueColor()
+         case 2: return UIColor.orangeColor()
+         case 3: return UIColor.redColor()
+         case 4: return UIColor.yellowColor()
+         case 5: return UIColor.purpleColor()
+         case 6: return UIColor.cyanColor()
+         case 7: return UIColor.brownColor()
+         case 8: return UIColor.magentaColor()
+         case 9: return UIColor.grayColor()
+         case 10: return UIColor.lightGrayColor()
+         default: return UIColor.darkGrayColor()
       }
    }
 }
