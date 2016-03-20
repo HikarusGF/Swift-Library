@@ -1,16 +1,14 @@
 /*
-.-----------------------------------------------------------------------------.
-/  .-.                                                                      .-.  \
-|  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-| |\_.  |                     http://ikiteruningen.net                     |    /| |
-|\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-| `---' |                                                                  | `---' |
-\       |------------------------------------------------------------------|       /
-\     /                                                                    \     /
-`---'                                                                      `---'
+                             .-----------------------------------------------------------------------------.
+                           /  .-.                                                                      .-.  \
+                          |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
+                          | |\_.  |                     http://ikiteruningen.net                     |    /| |
+                          |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
+                          | `---' |                                                                  | `---' |
+                          \       |------------------------------------------------------------------|       /
+                           \     /                                                                    \     /
+                            `---'                                                                      `---'
 */
-
-
 
 
 // This class encaptulates all grand central dispatch actions without having to know how the C funcions operate
