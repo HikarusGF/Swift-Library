@@ -69,32 +69,32 @@ func - (date1㊐: NSDate, date2㊐: NSDate) -> (years＃: Int, months＃: Int, d
    var date1㊐_ = date1㊐, date2㊐_ = date2㊐
    years＃ = date1㊐_.yearsFrom＃(date2㊐_)
    switch years＃ {
-   case let y＃ where y＃ > 0: date1㊐_ -= years＃.years＃㊐🅣
-   case let y＃ where y＃ < 0: date2㊐_ += years＃.years＃㊐🅣
+      case let y＃ where y＃ > 0: date1㊐_ -= years＃.years＃㊐🅣
+      case let y＃ where y＃ < 0: date2㊐_ += years＃.years＃㊐🅣
    default: break
    }
    months＃ = date1㊐_.monthsFrom＃(date2㊐_)
    switch months＃ {
-   case let m＃ where m＃ > 0: date1㊐_ -= months＃.months＃㊐🅣
-   case let m＃ where m＃ < 0: date2㊐_ += months＃.months＃㊐🅣
+      case let m＃ where m＃ > 0: date1㊐_ -= months＃.months＃㊐🅣
+      case let m＃ where m＃ < 0: date2㊐_ += months＃.months＃㊐🅣
    default: break
    }
    days＃ = date1㊐_.daysFrom＃(date2㊐_)
    switch days＃ {
-   case let d＃ where d＃ > 0: date1㊐_ -= days＃.days＃㊐🅣
-   case let d＃ where d＃ < 0: date2㊐_ += days＃.days＃㊐🅣
+      case let d＃ where d＃ > 0: date1㊐_ -= days＃.days＃㊐🅣
+      case let d＃ where d＃ < 0: date2㊐_ += days＃.days＃㊐🅣
    default: break
    }
    hours＃ = date1㊐_.hoursFrom＃(date2㊐_)
    switch hours＃ {
-   case let h＃ where h＃ > 0: date1㊐_ -= hours＃.hours＃㊐🅣
-   case let h＃ where h＃ < 0: date2㊐_ += hours＃.hours＃㊐🅣
+      case let h＃ where h＃ > 0: date1㊐_ -= hours＃.hours＃㊐🅣
+      case let h＃ where h＃ < 0: date2㊐_ += hours＃.hours＃㊐🅣
    default: break
    }
    minutes＃ = date1㊐_.minutesFrom＃(date2㊐_)
    switch minutes＃ {
-   case let m＃ where m＃ > 0: date1㊐_ -= minutes＃.minutes＃㊐🅣
-   case let m＃ where m＃ < 0: date2㊐_ += minutes＃.minutes＃㊐🅣
+      case let m＃ where m＃ > 0: date1㊐_ -= minutes＃.minutes＃㊐🅣
+      case let m＃ where m＃ < 0: date2㊐_ += minutes＃.minutes＃㊐🅣
    default: break
    }
    seconds＃ = date1㊐_.secondsFrom＃(date2㊐_)
@@ -111,9 +111,9 @@ func == (date1㊐: NSDate, date2㊐: NSDate) -> Bool { return date1㊐.timeInter
 
 let comparisonResult🅞 = date1㊐.compare(date2㊐)
 switch comparisonResult🅞 {
-case .OrderedAscending: // date1㊐ < date2㊐
-case .OrderedSame: // date1㊐ = date2㊐
-case .OrdeDescending: // date1㊐ > date2㊐
+   case .OrderedAscending: // date1㊐ < date2㊐
+   case .OrderedSame: // date1㊐ = date2㊐
+   case .OrdeDescending: // date1㊐ > date2㊐
 }
 
 return date1㊐.compare(date2㊐) == .OrderedAscending
@@ -220,13 +220,13 @@ extension NSDate {
       let dateFormatter🅞 = NSDateFormatter(); dateFormatter🅞.dateFormat = "EEEE"
       var dayOfTheWeek🅔 = HKDate＋.DaysOfTheWeek🅔.Monday
       switch dateFormatter🅞.stringFromDate(self) {
-      case "Monday", "月曜日": dayOfTheWeek🅔 = .Monday
-      case "Tuesday", "火曜日": dayOfTheWeek🅔 = .Tuesday
-      case "Wednesday", "水曜日": dayOfTheWeek🅔 = .Wednesday
-      case "Thursday", "木曜日": dayOfTheWeek🅔 = .Thursday
-      case "Friday", "金曜日": dayOfTheWeek🅔 = .Friday
-      case "Saturday", "土曜日": dayOfTheWeek🅔 = .Saturday
-      case "Sunday", "日曜日": dayOfTheWeek🅔 = .Sunday
+         case "Monday", "月曜日": dayOfTheWeek🅔 = .Monday
+         case "Tuesday", "火曜日": dayOfTheWeek🅔 = .Tuesday
+         case "Wednesday", "水曜日": dayOfTheWeek🅔 = .Wednesday
+         case "Thursday", "木曜日": dayOfTheWeek🅔 = .Thursday
+         case "Friday", "金曜日": dayOfTheWeek🅔 = .Friday
+         case "Saturday", "土曜日": dayOfTheWeek🅔 = .Saturday
+         case "Sunday", "日曜日": dayOfTheWeek🅔 = .Sunday
       default: break
       }
       return dayOfTheWeek🅔
