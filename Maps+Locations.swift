@@ -51,23 +51,23 @@ class HKMaps＋ { // this class encapsulates miscelaneous location functionaliti
    
    class func AuthorizationStatus🅔() -> authorizationStatusTypes🅔 {
       switch CLLocationManager.authorizationStatus() {
-      case .NotDetermined: return .UnDetermined
-      case .Restricted: return .Restricted
-      case .Denied: return .Denied
-      case .AuthorizedAlways: return .Always
-      case .AuthorizedWhenInUse: return .Foreground
+         case .NotDetermined: return .UnDetermined
+         case .Restricted: return .Restricted
+         case .Denied: return .Denied
+         case .AuthorizedAlways: return .Always
+         case .AuthorizedWhenInUse: return .Foreground
       }
    }
    
    class func ActivateLocationTracking(delegate🅞 delegate🅞: CLLocationManagerDelegate, accuracy🅔: trackingAccuracies🅔 = .Best, authorizationType🅔: authorizationTypes🅔 = .Active) {
       LocationManager🅞.delegate = delegate🅞
       switch accuracy🅔 {
-      case .Navigation: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-      case .Best: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyBest
-      case .m10: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-      case .m100: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyHundredMeters
-      case .Km1: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyKilometer
-      case .Km3: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+         case .Navigation: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+         case .Best: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyBest
+         case .m10: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+         case .m100: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyHundredMeters
+         case .Km1: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyKilometer
+         case .Km3: LocationManager🅞.desiredAccuracy = kCLLocationAccuracyThreeKilometers
       }
       if authorizationType🅔 == .Permanent { LocationManager🅞.requestAlwaysAuthorization() } else { LocationManager🅞.requestWhenInUseAuthorization() }
       LocationManager🅞.startUpdatingLocation()
@@ -146,8 +146,6 @@ class Location🅞: CustomDebugStringConvertible {
    
    var debugDescription: String { return "Country = \(self.country$)\nState = \(self.state$)\nCity = \(self.city$)\nZipCode = \(self.zipCode$)\nAddress = \(self.streetAndNumber$)" }
 }
-
-
 
 
 // practical way to tell the locationManager delegate (usually the viewController), to turn on or off location tracking
