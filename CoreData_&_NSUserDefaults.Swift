@@ -1,13 +1,13 @@
 /*
-.-----------------------------------------------------------------------------.
-/  .-.                                                                      .-.  \
-|  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
-| |\_.  |                     http://ikiteruningen.net                     |    /| |
-|\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
-| `---' |                                                                  | `---' |
-\       |------------------------------------------------------------------|       /
-\     /                                                                    \     /
-`---'                                                                      `---'
+                             .-----------------------------------------------------------------------------.
+                           /  .-.                                                                      .-.  \
+                          |  /   \    Hikarus Guijarro-Fayard - iOS developer specialized in Swift    /   \  |
+                          | |\_.  |                     http://ikiteruningen.net                     |    /| |
+                          |\|  | /|                 https://github.com/ikiteruningen                 |\  | |/|
+                          | `---' |                                                                  | `---' |
+                          \       |------------------------------------------------------------------|       /
+                           \     /                                                                    \     /
+                            `---'                                                                      `---'
 */
 
 class HKData＋ { // Functions to read and write with NSUserDefaults with implicit data-types to avoid having to cast --------------------------------------------------
