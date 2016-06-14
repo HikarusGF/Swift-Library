@@ -19,7 +19,7 @@ internal extension Array {
    subscript(start＃: Int, end＃: Int) -> Array<Element> {
       let maxEnd＃ = min(self.maxIndex＃, end＃)
       var output🅐: Array<Element> = []
-      for var index＃ = 0 ; index＃ <= maxEnd＃ ; index＃++ { output🅐.append(self[index＃]) }
+      for index＃ in 0...maxEnd＃ { output🅐.append(self[index＃]) }
       return output🅐
    }
    
@@ -31,7 +31,7 @@ internal extension Array {
       var output🅐 = [Element](); var counter = 1
       for element﹖ in self.reverse() {
          output🅐.append(element﹖)
-         counter++; if counter > numberOfElements＃ { break }
+         counter += 1; if counter > numberOfElements＃ { break }
       }
       return FIFOⓑ ? output🅐.reverse() : output🅐
    }
@@ -39,7 +39,7 @@ internal extension Array {
    mutating func pluck(atIndex itemIndex＃: Int = 0) -> Element { return self.removeAtIndex(itemIndex＃) }
    func last·n·Elements🅐(numberOfElements＃ numberOfElements＃: Int) -> [Element] {
       var outputArray🅐 = [Element]()
-      for (var elementIndex＃ = self.count - numberOfElements＃ ; elementIndex＃ < self.count ; elementIndex＃++) { outputArray🅐.append(self[elementIndex＃]) }
+      for elementIndex＃ in (self.count - numberOfElements＃)..<self.count { outputArray🅐.append(self[elementIndex＃]) }
       return outputArray🅐
    }
    var lastElement: Element? {
