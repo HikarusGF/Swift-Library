@@ -38,7 +38,7 @@ extension Optional {
 class HK＋ {
    
    // returns the type-name of ANY variable, including value-types
-   class func getTypeName$<T>(object$﹖: T) -> String { return _stdlib_getDemangledTypeName(object$﹖) } // やっと当たった。これはいいのだ！!
+   class func getTypeName$<T>(object$﹖: T) -> String { return String(object$﹖.dynamicType) }
    
    /*
    VERY USEFUL: The next 3 functions handle notifications
