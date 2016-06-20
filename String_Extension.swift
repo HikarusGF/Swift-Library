@@ -18,16 +18,16 @@ extension String {
    var maxIndex＃: Int  { return self.characters.count - 1 }
    
    // Returns the character at the index
-   subscript(index＃: Int) -> String? {
+    subscript(index＃: Int) -> String? { // Returns the character at the index
       if self.length＃ == 0 { return nil }
-      return self.substringWithRange(Range(start: self.startIndex.advancedBy(index＃), end: self.startIndex.advancedBy(index＃ + 1)))
+      return self.substringWithRange(self.startIndex.advancedBy(index＃)...self.startIndex.advancedBy(index＃))
    }
    
    // Returns the substring in the given Int range. Max-overflow-proof
-   subscript(start＃: Int, end＃: Int) -> String? {
+   subscript(start＃: Int, end＃: Int) -> String? { // Returns the substring in the given Int range. Max-overflow-proof
       let maxEnd＃ = min(self.maxIndex＃, end＃)
       if start＃ < 0 || start＃ > maxEnd＃ { return nil }
-      return self.substringWithRange(Range(start: self.startIndex.advancedBy(start＃), end: self.startIndex.advancedBy(maxEnd＃ + 1)))
+      return self.substringWithRange(self.startIndex.advancedBy(start＃)...self.startIndex.advancedBy(maxEnd＃ + 1))
    }
    
    func left$(length＃: Int) -> String { if length＃ <= self.length＃ { return self[0, length＃-1]! } else { return self } }
