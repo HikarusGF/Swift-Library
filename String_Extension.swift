@@ -17,13 +17,11 @@ extension String {
    var length＃: Int { return self.characters.count }
    var maxIndex＃: Int  { return self.characters.count - 1 }
    
-   // Returns the character at the index
     subscript(index＃: Int) -> String? { // Returns the character at the index
       if self.length＃ == 0 { return nil }
       return self.substringWithRange(self.startIndex.advancedBy(index＃)...self.startIndex.advancedBy(index＃))
    }
    
-   // Returns the substring in the given Int range. Max-overflow-proof
    subscript(start＃: Int, end＃: Int) -> String? { // Returns the substring in the given Int range. Max-overflow-proof
       let maxEnd＃ = min(self.maxIndex＃, end＃)
       if start＃ < 0 || start＃ > maxEnd＃ { return nil }
