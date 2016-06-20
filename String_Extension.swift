@@ -25,7 +25,7 @@ extension String {
    subscript(start＃: Int, end＃: Int) -> String? { // Returns the substring in the given Int range. Max-overflow-proof
       let maxEnd＃ = min(self.maxIndex＃, end＃)
       if start＃ < 0 || start＃ > maxEnd＃ { return nil }
-      return self.substringWithRange(self.startIndex.advancedBy(start＃)...self.startIndex.advancedBy(maxEnd＃ + 1))
+      return self.substringWithRange(self.startIndex.advancedBy(start＃)...self.startIndex.advancedBy(maxEnd＃))
    }
    
    func left$(length＃: Int) -> String { if length＃ <= self.length＃ { return self[0, length＃-1]! } else { return self } }
